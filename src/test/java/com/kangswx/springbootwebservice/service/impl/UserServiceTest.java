@@ -6,6 +6,11 @@ import org.apache.cxf.jaxws.JaxWsProxyFactoryBean;
 import org.apache.cxf.jaxws.endpoint.dynamic.JaxWsDynamicClientFactory;
 import org.junit.Test;
 
+/**
+ * 两种不同的方式来调用webservice服务
+ *     1：代理工厂方式
+ *     2：动态调用webservice
+ */
 public class UserServiceTest {
 
     /**
