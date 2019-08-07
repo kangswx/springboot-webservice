@@ -9,8 +9,10 @@ import javax.jws.WebService;
 import java.util.HashMap;
 import java.util.Map;
 
-@WebService(serviceName = "UserService",
+@WebService(serviceName = "UserService",  //对外发布的服务名
+        //指定名称空间，通常为包名反转
         targetNamespace = "http://service.springbootwebservice.kangswx.com",
+        //服务接口全路径, 指定做SEI（Service EndPoint Interface）服务端点接口
         endpointInterface = "com.kangswx.springbootwebservice.service.UserService")
 @Component
 public class UserServiceImpl implements UserService {
